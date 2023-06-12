@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B54B872-1539-4000-B45E-7176342B1B33}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{8B54B872-1539-4000-B45E-7176342B1B33}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="RailgunnerArisuSoundbank" ID="{4D80610F-D6EF-450B-A04B-CE5A1819790B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_RailgunnerArisu_ExSkill" ID="{67ECF72C-300A-4095-B049-AA77FCBE378E}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Lobby" ID="{4315E359-20F7-40AC-9734-D5F457CCE514}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Lobby_Halloween" ID="{2E3EC5F1-2A13-4199-8132-A1D6D1F3A776}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Lobby_Newyear" ID="{97BD0B5E-9F18-41F8-BA32-DA13FD57FA87}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Charge" ID="{FD7952F2-0397-4202-9D1D-C9D7195A7163}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_AcquireScepter" ID="{34FC4B20-93EE-42DE-91F4-5F91D460A056}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_LevelUp" ID="{E9148E4E-C594-441B-83A2-6FBC180AF9F8}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_TakeDamage" ID="{3F2889EC-80E1-4509-B236-86BE89BEE6B8}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Cafe_2" ID="{63FB4B60-E04A-47F7-AEFB-3ED6A23D26B4}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Relationship_Short" ID="{21D325A3-D1FE-48FB-9C48-F6EB136FA190}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_TitleDrop" ID="{F51A1E56-5084-49F5-A8A5-8EE881E76AF1}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Lobby_bday" ID="{F1E2A9EA-5B74-4A62-83A3-11E1CE34FB12}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Defeat" ID="{2D0405F9-98ED-4AF6-B12B-1090888C0BBE}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Lobby_xmas" ID="{DC3DFB0E-6790-4BC2-85FA-828496F2AABE}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Blocked" ID="{AFBC78A4-1B36-4CDA-B760-3334CC5DF5F2}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Spawn" ID="{ACA3CD8D-D5D2-4D48-978F-C982F2413C72}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Victory" ID="{491A0656-3FA6-4E89-8E20-413DC148B44C}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Relationship_Long" ID="{6B4BEE17-848E-4ED5-BB75-4E3617BBD34A}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Heal" ID="{F99D2FC5-FB28-4FE2-AFCD-216F4C6DC5AB}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
