@@ -23,6 +23,7 @@
 						<ObjectRef Name="Play_RailgunnerArisu_Spawn" ID="{ACA3CD8D-D5D2-4D48-978F-C982F2413C72}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Victory" ID="{491A0656-3FA6-4E89-8E20-413DC148B44C}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Relationship_Long" ID="{6B4BEE17-848E-4ED5-BB75-4E3617BBD34A}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_TeleporterStart" ID="{974BAB3C-35AB-4F95-82F9-BA4CFBB9EE92}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Heal" ID="{F99D2FC5-FB28-4FE2-AFCD-216F4C6DC5AB}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

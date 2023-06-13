@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3209664353" Language="SFX" Hash="3495145071">
+		<SoundBank Id="3209664353" Language="SFX" Hash="3654511568">
 			<ObjectPath>\SoundBanks\Default Work Unit\RailgunnerArisuSoundbank</ObjectPath>
 			<ShortName>RailgunnerArisuSoundbank</ShortName>
 			<Path>RailgunnerArisuSoundbank.bnk</Path>
@@ -37,19 +37,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3314389378" Name="Play_RailgunnerArisu_Cafe_2" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Cafe_2">
+					<IncludedMemoryFiles>
+						<File Id="14876587" Language="SFX">
+							<ShortName>Arisu_Cafe_Act_2.wav</ShortName>
+							<Path>SFX\Arisu_Cafe_Act_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="209263206" Name="Play_RailgunnerArisu_Charge" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Charge">
 					<IncludedMemoryFiles>
 						<File Id="496506805" Language="SFX">
 							<ShortName>Arisu_CommonSkill.wav</ShortName>
 							<Path>SFX\Arisu_CommonSkill_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1488980746" Name="Play_RailgunnerArisu_Coffee" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Coffee">
-					<IncludedMemoryFiles>
-						<File Id="14876587" Language="SFX">
-							<ShortName>Arisu_Cafe_Act_2.wav</ShortName>
-							<Path>SFX\Arisu_Cafe_Act_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -94,26 +94,6 @@
 						<File Id="1028263972" Language="SFX">
 							<ShortName>Arisu_ExSkill_Level_3.wav</ShortName>
 							<Path>SFX\Arisu_ExSkill_Level_3_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="180067790" Name="Play_RailgunnerArisu_FindLegendary" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_FindLegendary">
-					<IncludedMemoryFiles>
-						<File Id="380709840" Language="SFX">
-							<ShortName>Arisu_Relationship_Up_1.wav</ShortName>
-							<Path>SFX\Arisu_Relationship_Up_1_10C4C929.wem</Path>
-						</File>
-						<File Id="859595849" Language="SFX">
-							<ShortName>Arisu_Relationship_Up_2.wav</ShortName>
-							<Path>SFX\Arisu_Relationship_Up_2_10C4C929.wem</Path>
-						</File>
-						<File Id="951487840" Language="SFX">
-							<ShortName>Arisu_Relationship_Up_3.wav</ShortName>
-							<Path>SFX\Arisu_Relationship_Up_3_10C4C929.wem</Path>
-						</File>
-						<File Id="1019230840" Language="SFX">
-							<ShortName>Arisu_Relationship_Up_4.wav</ShortName>
-							<Path>SFX\Arisu_Relationship_Up_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -167,6 +147,10 @@
 							<ShortName>Arisu_Lobby_3.wav</ShortName>
 							<Path>SFX\Arisu_Lobby_3_10C4C929.wem</Path>
 						</File>
+						<File Id="778771525" Language="SFX">
+							<ShortName>Arisu_Gachaget.wav</ShortName>
+							<Path>SFX\Arisu_Gachaget_10C4C929.wem</Path>
+						</File>
 						<File Id="875003895" Language="SFX">
 							<ShortName>Arisu_Lobby_4.wav</ShortName>
 							<Path>SFX\Arisu_Lobby_4_10C4C929.wem</Path>
@@ -209,8 +193,44 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3511744753" Name="Play_RailgunnerArisu_Relationship_Long" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Relationship_Long">
+					<IncludedMemoryFiles>
+						<File Id="859595849" Language="SFX">
+							<ShortName>Arisu_Relationship_Up_2.wav</ShortName>
+							<Path>SFX\Arisu_Relationship_Up_2_10C4C929.wem</Path>
+						</File>
+						<File Id="951487840" Language="SFX">
+							<ShortName>Arisu_Relationship_Up_3.wav</ShortName>
+							<Path>SFX\Arisu_Relationship_Up_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3059718119" Name="Play_RailgunnerArisu_Relationship_Short" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Relationship_Short">
+					<IncludedMemoryFiles>
+						<File Id="380709840" Language="SFX">
+							<ShortName>Arisu_Relationship_Up_1.wav</ShortName>
+							<Path>SFX\Arisu_Relationship_Up_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1019230840" Language="SFX">
+							<ShortName>Arisu_Relationship_Up_4.wav</ShortName>
+							<Path>SFX\Arisu_Relationship_Up_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3692054643" Name="Play_RailgunnerArisu_Spawn" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Spawn">
 					<IncludedMemoryFiles>
+						<File Id="219352585" Language="SFX">
+							<ShortName>Arisu_Formation_In_2.wav</ShortName>
+							<Path>SFX\Arisu_Formation_In_2_10C4C929.wem</Path>
+						</File>
+						<File Id="410556303" Language="SFX">
+							<ShortName>Arisu_Formation_Select.wav</ShortName>
+							<Path>SFX\Arisu_Formation_Select_10C4C929.wem</Path>
+						</File>
+						<File Id="480939002" Language="SFX">
+							<ShortName>Arisu_Formation_In_1.wav</ShortName>
+							<Path>SFX\Arisu_Formation_In_1_10C4C929.wem</Path>
+						</File>
 						<File Id="627328460" Language="SFX">
 							<ShortName>Arisu_Tactic_In_1.wav</ShortName>
 							<Path>SFX\Arisu_Tactic_In_1_10C4C929.wem</Path>
@@ -242,6 +262,18 @@
 						<File Id="794365579" Language="SFX">
 							<ShortName>Arisu_Battle_Damage_2.wav</ShortName>
 							<Path>SFX\Arisu_Battle_Damage_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1520802354" Name="Play_RailgunnerArisu_TeleporterStart" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_TeleporterStart">
+					<IncludedMemoryFiles>
+						<File Id="206378454" Language="SFX">
+							<ShortName>Arisu_Battle_Shout_2.wav</ShortName>
+							<Path>SFX\Arisu_Battle_Shout_2_10C4C929.wem</Path>
+						</File>
+						<File Id="901601663" Language="SFX">
+							<ShortName>Arisu_Battle_Shout_3.wav</ShortName>
+							<Path>SFX\Arisu_Battle_Shout_3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -19,7 +19,17 @@ namespace RailgunnerArisuVoiceover.Components
         private float specialCooldown = 0f;
         private float levelCooldown = 0f;
         private float coffeeCooldown = 0f;
+        private float elixirCooldown = 0f;
         private bool acquiredScepter = false;
+        protected override void Awake()
+        {
+            spawnVoicelineDelay = 3f;
+            if (Run.instance && Run.instance.stageClearCount == 0)
+            {
+                spawnVoicelineDelay = 6.5f;
+            }
+            base.Awake();
+        }
 
         protected override void FixedUpdate()
         {
@@ -29,6 +39,7 @@ namespace RailgunnerArisuVoiceover.Components
             if (hurtCooldown > 0f) hurtCooldown -= Time.fixedDeltaTime;
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (coffeeCooldown > 0f) coffeeCooldown -= Time.fixedDeltaTime;
+            if (elixirCooldown > 0f) elixirCooldown -= Time.fixedDeltaTime;
         }
 
         public override void PlayDamageBlockedServer()
@@ -86,7 +97,7 @@ namespace RailgunnerArisuVoiceover.Components
 
         public override void PlayTeleporterStart()
         {
-            throw new NotImplementedException();
+            TryPlaySound("Play_RailgunnerArisu_TeleporterStart", 1.4f, false);
         }
 
         public override void PlayUtilityAuthority() { }
@@ -106,6 +117,10 @@ namespace RailgunnerArisuVoiceover.Components
             else if (itemIndex == DLC1Content.Items.AttackSpeedAndMoveSpeed.itemIndex)
             {
                 PlayCoffee();
+            }
+            else if (itemIndex == DLC1Content.Items.HealingPotion.itemIndex)
+            {
+                PlayElixir();
             }
             else
             {
@@ -141,6 +156,12 @@ namespace RailgunnerArisuVoiceover.Components
         {
             if (coffeeCooldown > 0) return;
             if (TryPlaySound("Play_RailgunnerArisu_Cafe_2", 2f, false)) coffeeCooldown = 60f;
+        }
+
+        public void PlayElixir()
+        {
+            if (elixirCooldown > 0) return;
+            if (TryPlaySound("Play_RailgunnerArisu_Heal", 1.5f, false)) coffeeCooldown = 60f;
         }
     }
 }

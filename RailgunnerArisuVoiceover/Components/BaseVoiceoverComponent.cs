@@ -141,7 +141,7 @@ namespace RailgunnerArisuVoiceover.Components
         {
             bool playedSound = false;
 
-            if (ArisuRailgunnerVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay) && !preventVoicelines)
+            if (RailgunnerArisuVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay) && !preventVoicelines)
             {
                 EntitySoundManager.EmitSoundServer(networkSoundIndex, base.gameObject);
                 playedSound = true;
@@ -156,7 +156,7 @@ namespace RailgunnerArisuVoiceover.Components
         {
             bool playedSound = false;
 
-            if (ArisuRailgunnerVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay))
+            if (RailgunnerArisuVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay))
             {
                 RoR2.Util.PlaySound(soundName, base.gameObject);
                 playedSound = true;

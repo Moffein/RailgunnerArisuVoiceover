@@ -136,50 +136,6 @@
 												<ActiveSource Name="Arisu_Battle_Defense_1" ID="{600077B3-DAA8-4C5F-8194-6299E9C074A6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Arisu_Battle_Move_1" ID="{9CEE6A83-AB9A-414E-97EB-0A5331FD5357}" ShortID="292305092">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Arisu_Battle_Move_1" ID="{B1AE59F4-16B8-4C1C-9AD7-551E36ED691E}">
-													<Language>SFX</Language>
-													<AudioFile>Arisu_Battle_Move_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="895317738"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Arisu_Battle_Move_1" ID="{B1AE59F4-16B8-4C1C-9AD7-551E36ED691E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Arisu_Battle_Move_2" ID="{A938C1C7-9E7F-4C76-9D67-F23A1ECA3B7E}" ShortID="402084988">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Arisu_Battle_Move_2" ID="{ED4FC20E-12E5-4C5B-9830-3BDFEABD6807}">
-													<Language>SFX</Language>
-													<AudioFile>Arisu_Battle_Move_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="262917386"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Arisu_Battle_Move_2" ID="{ED4FC20E-12E5-4C5B-9830-3BDFEABD6807}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Arisu_Battle_Recovery_1" ID="{73047611-03D8-4979-BFC4-AEDA5DDB853B}" ShortID="409216233">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -486,72 +442,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Arisu_ExWeapon_Get" ID="{76C5B23C-1633-4C95-AAF4-0DC3F11E8ABC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Arisu_Formation_In_1" ID="{2C08EB98-FCFE-497A-8DCF-9BBD9E9EE6FB}" ShortID="636015319">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Arisu_Formation_In_1" ID="{EED63598-8F4A-4C60-989B-F354AA29B362}">
-													<Language>SFX</Language>
-													<AudioFile>Arisu_Formation_In_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="480939002"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Arisu_Formation_In_1" ID="{EED63598-8F4A-4C60-989B-F354AA29B362}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Arisu_Formation_In_2" ID="{A0FDC0F8-A852-4C35-9B36-61E7562A9E1A}" ShortID="863859012">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Arisu_Formation_In_2" ID="{3FF21210-4051-49ED-BC52-221743D933F6}">
-													<Language>SFX</Language>
-													<AudioFile>Arisu_Formation_In_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="219352585"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Arisu_Formation_In_2" ID="{3FF21210-4051-49ED-BC52-221743D933F6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Arisu_Formation_Select" ID="{D5C385FB-6CEB-4BD9-B23D-03FE05122F2D}" ShortID="273795318">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Arisu_Formation_Select" ID="{8F09ECB3-B342-4EAC-AF21-C12B1136F927}">
-													<Language>SFX</Language>
-													<AudioFile>Arisu_Formation_Select.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="410556303"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Arisu_Formation_Select" ID="{8F09ECB3-B342-4EAC-AF21-C12B1136F927}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Arisu_Gachaget" ID="{F7F84A49-0000-4787-9246-203EFED0713B}" ShortID="42288283">
@@ -1410,6 +1300,34 @@
 														<ActiveSource Name="Arisu_Login_1" ID="{6093044D-54EA-44F4-B56A-0467ABE9EEB0}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="Arisu_Gachaget" ID="{A7610CC8-E1EA-4976-8D48-F2F34585281A}" ShortID="38908270">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Gachaget" ID="{59EB2735-6F48-4873-85E2-939EE2DCD1BD}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Gachaget.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="778771525"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Gachaget" ID="{59EB2735-6F48-4873-85E2-939EE2DCD1BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Relationship_Long" ID="{E652EFDC-EF1E-45C0-8C9E-8CFD88B746D3}" ShortID="1023498761">
@@ -1726,6 +1644,90 @@
 														<ActiveSource Name="Arisu_Battle_In_2" ID="{D66E44E9-B5D8-4E4A-AC2A-69F700741EE6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="Arisu_Formation_Select" ID="{D5C385FB-6CEB-4BD9-B23D-03FE05122F2D}" ShortID="273795318">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Formation_Select" ID="{8F09ECB3-B342-4EAC-AF21-C12B1136F927}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Formation_Select.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="410556303"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Formation_Select" ID="{8F09ECB3-B342-4EAC-AF21-C12B1136F927}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Arisu_Formation_In_1" ID="{2C08EB98-FCFE-497A-8DCF-9BBD9E9EE6FB}" ShortID="636015319">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Formation_In_1" ID="{EED63598-8F4A-4C60-989B-F354AA29B362}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Formation_In_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="480939002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Formation_In_1" ID="{EED63598-8F4A-4C60-989B-F354AA29B362}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Arisu_Formation_In_2" ID="{A0FDC0F8-A852-4C35-9B36-61E7562A9E1A}" ShortID="863859012">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Formation_In_2" ID="{3FF21210-4051-49ED-BC52-221743D933F6}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Formation_In_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="219352585"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Formation_In_2" ID="{3FF21210-4051-49ED-BC52-221743D933F6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="TeleporterStart" ID="{68FE673E-4798-47E7-A347-DD032481EB0C}" ShortID="356824530">
@@ -1737,6 +1739,64 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Arisu_Battle_Shout_3" ID="{851E75B7-DC1B-4737-BB60-4BAC5CFD2405}" ShortID="51162180">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Battle_Shout_3" ID="{A159B548-7B41-4D3B-8B72-F46F757B4ABD}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Battle_Shout_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="901601663"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Battle_Shout_3" ID="{A159B548-7B41-4D3B-8B72-F46F757B4ABD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Arisu_Battle_Shout_2" ID="{E6905C81-AA6D-43E5-BA32-ED27CBEBEEB3}" ShortID="91351965">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Arisu_Battle_Shout_2" ID="{636AD7B6-C48B-4380-929C-B06B183DEBF3}">
+															<Language>SFX</Language>
+															<AudioFile>Arisu_Battle_Shout_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="206378454"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Arisu_Battle_Shout_2" ID="{636AD7B6-C48B-4380-929C-B06B183DEBF3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Relationship_Short" ID="{3B7DF43A-621F-4E6D-95A9-066C25121362}" ShortID="322759087">
 											<ReferenceList>
@@ -1806,6 +1866,62 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<Sound Name="Arisu_Battle_Move_2" ID="{A938C1C7-9E7F-4C76-9D67-F23A1ECA3B7E}" ShortID="402084988">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Arisu_Battle_Move_2" ID="{ED4FC20E-12E5-4C5B-9830-3BDFEABD6807}">
+													<Language>SFX</Language>
+													<AudioFile>Arisu_Battle_Move_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="262917386"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Arisu_Battle_Move_2" ID="{ED4FC20E-12E5-4C5B-9830-3BDFEABD6807}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Arisu_Battle_Move_1" ID="{9CEE6A83-AB9A-414E-97EB-0A5331FD5357}" ShortID="292305092">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAttenuation" ID="{32FF4AE7-4CB9-448E-9250-F6090E8F54B8}" WorkUnitID="{076F305E-ACE2-45D4-92D5-4C78121CD7FF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Arisu_Battle_Move_1" ID="{B1AE59F4-16B8-4C1C-9AD7-551E36ED691E}">
+													<Language>SFX</Language>
+													<AudioFile>Arisu_Battle_Move_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="895317738"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Arisu_Battle_Move_1" ID="{B1AE59F4-16B8-4C1C-9AD7-551E36ED691E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

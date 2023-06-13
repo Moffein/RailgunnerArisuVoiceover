@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace BanditMikaVoiceover.Modules
+namespace RailgunnerArisuVoiceover.Modules
 {
     public static class SoundBanks
     {

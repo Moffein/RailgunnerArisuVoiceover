@@ -212,6 +212,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_RailgunnerArisu_TeleporterStart" ID="{974BAB3C-35AB-4F95-82F9-BA4CFBB9EE92}">
+					<ChildrenList>
+						<Action Name="" ID="{2BF3D245-8D6E-4ED1-9616-5A031633BA92}" ShortID="750551651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TeleporterStart" ID="{68FE673E-4798-47E7-A347-DD032481EB0C}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

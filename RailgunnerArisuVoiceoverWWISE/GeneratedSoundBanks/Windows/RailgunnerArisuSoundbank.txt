@@ -1,5 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	180067790	Play_RailgunnerArisu_FindLegendary			\Default Work Unit\Play_RailgunnerArisu_FindLegendary	
 	199085474	Play_RailgunnerArisu_Blocked			\Default Work Unit\Play_RailgunnerArisu_Blocked	
 	209263206	Play_RailgunnerArisu_Charge			\Default Work Unit\Play_RailgunnerArisu_Charge	
 	374881126	Play_RailgunnerArisu_Lobby			\Default Work Unit\Play_RailgunnerArisu_Lobby	
@@ -7,14 +6,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	611174584	Play_RailgunnerArisu_AcquireScepter			\Default Work Unit\Play_RailgunnerArisu_AcquireScepter	
 	865924240	Play_RailgunnerArisu_Lobby_xmas			\Default Work Unit\Play_RailgunnerArisu_Lobby_xmas	
 	1291735156	Play_RailgunnerArisu_Victory			\Default Work Unit\Play_RailgunnerArisu_Victory	
-	1488980746	Play_RailgunnerArisu_Coffee			\Default Work Unit\Play_RailgunnerArisu_Coffee	
+	1520802354	Play_RailgunnerArisu_TeleporterStart			\Default Work Unit\Play_RailgunnerArisu_TeleporterStart	
 	1585292495	Play_RailgunnerArisu_LevelUp			\Default Work Unit\Play_RailgunnerArisu_LevelUp	
 	1618744726	Play_RailgunnerArisu_Lobby_Halloween			\Default Work Unit\Play_RailgunnerArisu_Lobby_Halloween	
 	1771846507	Play_RailgunnerArisu_Defeat			\Default Work Unit\Play_RailgunnerArisu_Defeat	
 	2043673356	Play_RailgunnerArisu_Heal			\Default Work Unit\Play_RailgunnerArisu_Heal	
 	2232569772	Play_RailgunnerArisu_TakeDamage			\Default Work Unit\Play_RailgunnerArisu_TakeDamage	
+	3059718119	Play_RailgunnerArisu_Relationship_Short			\Default Work Unit\Play_RailgunnerArisu_Relationship_Short	
 	3239775753	Play_RailgunnerArisu_Lobby_bday			\Default Work Unit\Play_RailgunnerArisu_Lobby_bday	
+	3314389378	Play_RailgunnerArisu_Cafe_2			\Default Work Unit\Play_RailgunnerArisu_Cafe_2	
 	3325945030	Play_RailgunnerArisu_Lobby_Newyear			\Default Work Unit\Play_RailgunnerArisu_Lobby_Newyear	
+	3511744753	Play_RailgunnerArisu_Relationship_Long			\Default Work Unit\Play_RailgunnerArisu_Relationship_Long	
 	3692054643	Play_RailgunnerArisu_Spawn			\Default Work Unit\Play_RailgunnerArisu_Spawn	
 	3941988267	Play_RailgunnerArisu_TitleDrop			\Default Work Unit\Play_RailgunnerArisu_TitleDrop	
 
@@ -26,6 +28,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	66780963	Arisu_Growup_4	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Growup_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp\Arisu_Growup_4		438066
 	87659137	Arisu_Lobby_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Lobby_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_Lobby_2		698286
 	197452715	Arisu_Lobby_5	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Lobby_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_Lobby_5		528838
+	206378454	Arisu_Battle_Shout_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Shout_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\TeleporterStart\Arisu_Battle_Shout_2		64598
+	219352585	Arisu_Formation_In_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Formation_In_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Arisu_Formation_In_2		320996
 	246946770	Arisu_Growup_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Growup_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp\Arisu_Growup_2		707782
 	265325046	Arisu_ExSkill_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_ExSkill_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExSkill\Arisu_ExSkill_3		206982
 	284228412	Arisu_Battle_Victory_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Arisu_Battle_Victory_1		234206
@@ -33,8 +37,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	335801111	Arisu_Battle_Retire	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Retire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Defeat\Arisu_Battle_Retire		199352
 	339383565	Arisu_Battle_Defense_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Defense_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_Battle_Defense_1		113312
 	359163821	Arisu_Tactic_Victory_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Tactic_Victory_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Arisu_Tactic_Victory_1		229546
-	380709840	Arisu_Relationship_Up_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Arisu_Relationship_Up_1		305942
+	380709840	Arisu_Relationship_Up_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship_Short\Arisu_Relationship_Up_1		305942
+	410556303	Arisu_Formation_Select	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Formation_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Arisu_Formation_Select		126808
 	455306454	Arisu_LogIn_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_LogIn_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_LogIn_2		524062
+	480939002	Arisu_Formation_In_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Formation_In_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Arisu_Formation_In_1		216802
 	496506805	Arisu_CommonSkill	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_CommonSkill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_CommonSkill		88206
 	501157228	Arisu_Tactic_Victory_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Tactic_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Arisu_Tactic_Victory_2		338238
 	506928434	Arisu_Battle_Recovery_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Recovery_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_Battle_Recovery_1		128896
@@ -53,17 +59,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	742066271	Arisu_Season_Halloween	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Season_Halloween_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_Season_Halloween		647158
 	755449002	Arisu_Battle_Damage_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Damage_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\TakeDamage\Arisu_Battle_Damage_1		68832
 	772197811	Arisu_Title	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Title_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_Title		114490
+	778771525	Arisu_Gachaget	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Gachaget_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_Gachaget		359804
 	794365579	Arisu_Battle_Damage_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Damage_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\TakeDamage\Arisu_Battle_Damage_2		169070
 	802763982	Arisu_Season_Birthday	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Season_Birthday_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_Season_Birthday		753970
 	821491802	Arisu_Growup_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Growup_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp\Arisu_Growup_3		547610
 	841401760	Arisu_ExSkill_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_ExSkill_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExSkill\Arisu_ExSkill_2		293830
 	848963267	Arisu_Battle_In_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_In_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Arisu_Battle_In_2		241262
-	859595849	Arisu_Relationship_Up_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Arisu_Relationship_Up_2		1312040
+	859595849	Arisu_Relationship_Up_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship_Long\Arisu_Relationship_Up_2		1312040
 	875003895	Arisu_Lobby_4	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Lobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_Lobby_4		803508
 	890028057	Arisu_ExWeapon_Get	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_ExWeapon_Get_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Arisu_ExWeapon_Get		502864
-	951487840	Arisu_Relationship_Up_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Arisu_Relationship_Up_3		1224370
+	901601663	Arisu_Battle_Shout_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Shout_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\TeleporterStart\Arisu_Battle_Shout_3		121972
+	951487840	Arisu_Relationship_Up_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship_Long\Arisu_Relationship_Up_3		1224370
 	993196021	Arisu_Battle_Victory_2	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_Victory_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Arisu_Battle_Victory_2		262606
-	1019230840	Arisu_Relationship_Up_4	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Arisu_Relationship_Up_4		407608
+	1019230840	Arisu_Relationship_Up_4	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Relationship_Up_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship_Short\Arisu_Relationship_Up_4		407608
 	1023162988	Arisu_Battle_In_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Battle_In_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Spawn\Arisu_Battle_In_1		321966
 	1028263972	Arisu_ExSkill_Level_3	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_ExSkill_Level_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExSkill\Arisu_ExSkill_Level_3		372652
 	1044645112	Arisu_Login_1	C:\Users\Node\RoR2 Mods\RailgunnerArisuVoiceover\RailgunnerArisuVoiceoverWWISE\.cache\Windows\SFX\Arisu_Login_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Arisu_Login_1		354394

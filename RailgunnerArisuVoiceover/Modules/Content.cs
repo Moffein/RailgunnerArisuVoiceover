@@ -4,7 +4,7 @@ using RoR2;
 using RoR2.ContentManagement;
 using UnityEngine;
 
-namespace BanditMikaVoiceover.Modules
+namespace RailgunnerArisuVoiceover.Modules
 {
     public class Content : IContentPackProvider
     {

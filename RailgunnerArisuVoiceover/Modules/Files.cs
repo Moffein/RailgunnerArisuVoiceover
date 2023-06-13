@@ -1,7 +1,7 @@
 ﻿using BepInEx;
 using System.IO;
 
-namespace BanditMikaVoiceover.Modules
+namespace RailgunnerArisuVoiceover.Modules
 {
     public static class Files
     {
