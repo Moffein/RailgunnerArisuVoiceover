@@ -141,14 +141,21 @@ namespace RailgunnerArisuVoiceover.Components
 
         public void PlayAcquireLegendary()
         {
-            if (Util.CheckRoll(50f))
+            if (Util.CheckRoll(20f))
             {
-                TryPlaySound("Play_RailgunnerArisu_Relationship_Short", 4.6f, false);
+                TryPlaySound("Play_RailgunnerArisu_Panpakapan", 1.5f, false);
             }
             else
             {
+                if (Util.CheckRoll(50f))
+                {
+                    TryPlaySound("Play_RailgunnerArisu_Relationship_Short", 4.6f, false);
+                }
+                else
+                {
 
-                TryPlaySound("Play_RailgunnerArisu_Relationship_Long", 15f, false);
+                    TryPlaySound("Play_RailgunnerArisu_Relationship_Long", 15f, false);
+                }
             }
         }
 

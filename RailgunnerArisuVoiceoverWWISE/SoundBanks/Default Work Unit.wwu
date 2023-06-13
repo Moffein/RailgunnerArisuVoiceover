@@ -18,6 +18,7 @@
 						<ObjectRef Name="Play_RailgunnerArisu_TitleDrop" ID="{F51A1E56-5084-49F5-A8A5-8EE881E76AF1}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Lobby_bday" ID="{F1E2A9EA-5B74-4A62-83A3-11E1CE34FB12}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Defeat" ID="{2D0405F9-98ED-4AF6-B12B-1090888C0BBE}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_Panpakapan" ID="{2772F367-7A39-4B94-AF6E-B6CBF8FB1B7E}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Lobby_xmas" ID="{DC3DFB0E-6790-4BC2-85FA-828496F2AABE}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Blocked" ID="{AFBC78A4-1B36-4CDA-B760-3334CC5DF5F2}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Spawn" ID="{ACA3CD8D-D5D2-4D48-978F-C982F2413C72}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
