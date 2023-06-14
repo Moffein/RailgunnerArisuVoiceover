@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3209664353" Language="SFX" Hash="3335660862">
+		<SoundBank Id="3209664353" Language="SFX" Hash="2753519990">
 			<ObjectPath>\SoundBanks\Default Work Unit\RailgunnerArisuSoundbank</ObjectPath>
 			<ShortName>RailgunnerArisuSoundbank</ShortName>
 			<Path>RailgunnerArisuSoundbank.bnk</Path>
@@ -197,6 +197,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="224748794" Name="Play_RailgunnerArisu_LowHealth" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_LowHealth">
+					<IncludedMemoryFiles>
+						<File Id="517914129" Language="SFX">
+							<ShortName>Arisu_Battle_Damage_3.wav</ShortName>
+							<Path>SFX\Arisu_Battle_Damage_3_10C4C929.wem</Path>
+						</File>
+						<File Id="794365579" Language="SFX">
+							<ShortName>Arisu_Battle_Damage_2.wav</ShortName>
+							<Path>SFX\Arisu_Battle_Damage_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3093608411" Name="Play_RailgunnerArisu_Panpakapan" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_Panpakapan">
 					<IncludedMemoryFiles>
 						<File Id="265277905" Language="SFX">
@@ -263,10 +275,6 @@
 				</Event>
 				<Event Id="2232569772" Name="Play_RailgunnerArisu_TakeDamage" ObjectPath="\Events\Default Work Unit\Play_RailgunnerArisu_TakeDamage">
 					<IncludedMemoryFiles>
-						<File Id="517914129" Language="SFX">
-							<ShortName>Arisu_Battle_Damage_3.wav</ShortName>
-							<Path>SFX\Arisu_Battle_Damage_3_10C4C929.wem</Path>
-						</File>
 						<File Id="558108512" Language="SFX">
 							<ShortName>Arisu_(Maid)_Battle_Damage_2.wav</ShortName>
 							<Path>SFX\Arisu_(Maid)_Battle_Damage_2_10C4C929.wem</Path>
@@ -278,10 +286,6 @@
 						<File Id="755449002" Language="SFX">
 							<ShortName>Arisu_Battle_Damage_1.wav</ShortName>
 							<Path>SFX\Arisu_Battle_Damage_1_10C4C929.wem</Path>
-						</File>
-						<File Id="794365579" Language="SFX">
-							<ShortName>Arisu_Battle_Damage_2.wav</ShortName>
-							<Path>SFX\Arisu_Battle_Damage_2_10C4C929.wem</Path>
 						</File>
 						<File Id="849613324" Language="SFX">
 							<ShortName>Arisu_(Maid)_Battle_Damage_3.wav</ShortName>

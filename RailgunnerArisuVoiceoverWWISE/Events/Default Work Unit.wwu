@@ -234,6 +234,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_RailgunnerArisu_LowHealth" ID="{18FF0491-DA92-45F3-8D27-8616454C360C}">
+					<ChildrenList>
+						<Action Name="" ID="{5B585265-BF63-4F96-A5A8-26C2C7809BAF}" ShortID="565889854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowHealth" ID="{34D6D951-E06A-42C5-A4E5-05AEDAE76DFA}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

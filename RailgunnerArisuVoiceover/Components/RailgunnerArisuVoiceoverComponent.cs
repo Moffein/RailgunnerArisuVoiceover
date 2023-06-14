@@ -14,12 +14,12 @@ namespace RailgunnerArisuVoiceover.Components
         public static NetworkSoundEventDef nseSpecial;
         public static NetworkSoundEventDef nseBlock;
 
-        private float hurtCooldown = 0f;
         private float blockedCooldown = 0f;
         private float specialCooldown = 0f;
         private float levelCooldown = 0f;
         private float coffeeCooldown = 0f;
         private float elixirCooldown = 0f;
+        private float lowHealthCooldown = 0f;
         private bool acquiredScepter = false;
         protected override void Awake()
         {
@@ -36,10 +36,10 @@ namespace RailgunnerArisuVoiceover.Components
             base.FixedUpdate();
             if (blockedCooldown > 0f) blockedCooldown -= Time.fixedDeltaTime;
             if (specialCooldown > 0f) specialCooldown -= Time.fixedDeltaTime;
-            if (hurtCooldown > 0f) hurtCooldown -= Time.fixedDeltaTime;
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
             if (coffeeCooldown > 0f) coffeeCooldown -= Time.fixedDeltaTime;
             if (elixirCooldown > 0f) elixirCooldown -= Time.fixedDeltaTime;
+            if (lowHealthCooldown > 0f) lowHealthCooldown -= Time.fixedDeltaTime;
         }
 
         public override void PlayDamageBlockedServer()
@@ -56,10 +56,9 @@ namespace RailgunnerArisuVoiceover.Components
 
         public override void PlayHurt(float percentHPLost)
         {
-            if (hurtCooldown <= 0f && percentHPLost >= 0.1f)
+            if (percentHPLost >= 0.1f)
             {
                 TryPlaySound("Play_RailgunnerArisu_TakeDamage", 0f, false);
-                hurtCooldown = 1f;
             }
         }
 
@@ -72,7 +71,11 @@ namespace RailgunnerArisuVoiceover.Components
             if (played) levelCooldown = 60f;
         }
 
-        public override void PlayLowHealth() { }
+        public override void PlayLowHealth()
+        {
+            if (lowHealthCooldown > 0f) return;
+            if (TryPlaySound("Play_RailgunnerArisu_LowHealth", 1.9f, false)) lowHealthCooldown = 60f;
+        }
 
         public override void PlayPrimaryAuthority() { }
 
@@ -144,19 +147,14 @@ namespace RailgunnerArisuVoiceover.Components
             if (Util.CheckRoll(20f))
             {
                 TryPlaySound("Play_RailgunnerArisu_Panpakapan", 1.5f, false);
+                return;
             }
-            else
+            if (Util.CheckRoll(50f))
             {
-                if (Util.CheckRoll(50f))
-                {
-                    TryPlaySound("Play_RailgunnerArisu_Relationship_Short", 4.6f, false);
-                }
-                else
-                {
-
-                    TryPlaySound("Play_RailgunnerArisu_Relationship_Long", 15f, false);
-                }
+                TryPlaySound("Play_RailgunnerArisu_Relationship_Short", 4.6f, false);
+                return;
             }
+            TryPlaySound("Play_RailgunnerArisu_Relationship_Long", 15f, false);
         }
 
         public void PlayCoffee()

@@ -13,6 +13,7 @@
 						<ObjectRef Name="Play_RailgunnerArisu_AcquireScepter" ID="{34FC4B20-93EE-42DE-91F4-5F91D460A056}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_LevelUp" ID="{E9148E4E-C594-441B-83A2-6FBC180AF9F8}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_TakeDamage" ID="{3F2889EC-80E1-4509-B236-86BE89BEE6B8}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RailgunnerArisu_LowHealth" ID="{18FF0491-DA92-45F3-8D27-8616454C360C}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Cafe_2" ID="{63FB4B60-E04A-47F7-AEFB-3ED6A23D26B4}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_Relationship_Short" ID="{21D325A3-D1FE-48FB-9C48-F6EB136FA190}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RailgunnerArisu_TitleDrop" ID="{F51A1E56-5084-49F5-A8A5-8EE881E76AF1}" WorkUnitID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" Origin="Manual" Filter="7"/>
