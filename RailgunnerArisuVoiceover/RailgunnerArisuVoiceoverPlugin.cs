@@ -10,12 +10,13 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
+using System.Collections.Generic;
 
 namespace RailgunnerArisuVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.TendouArisTheRailgunner")]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.0")]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.1")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -38,13 +39,16 @@ namespace RailgunnerArisuVoiceover
             InitNSE();
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Aris Railgunner Skin."));
+            enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
             }
+        }
 
-            RailgunnerArisuVoiceoverComponent.nseSpecial = Content.CreateNSE("Play_RailgunnerArisu_ExSkill");
-            RailgunnerArisuVoiceoverComponent.nseBlock = Content.CreateNSE("Play_RailgunnerArisu_Blocked");
+        private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
+        {
+            RefreshNSE();
         }
 
         private void Start()
@@ -147,11 +151,17 @@ namespace RailgunnerArisuVoiceover
                 };
             }
             RailgunnerArisuVoiceoverComponent.ScepterIndex = ItemCatalog.FindItemIndex("ITEM_ANCIENT_SCEPTER");
+
+            //Add this during OnLoad so that the NSE fields aren't empty.
+            nseList.Add(new NSEInfo(RailgunnerArisuVoiceoverComponent.nseSpecial));
+            nseList.Add(new NSEInfo(RailgunnerArisuVoiceoverComponent.nseBlock));
+            RefreshNSE();
         }
 
         private void InitNSE()
         {
-
+            RailgunnerArisuVoiceoverComponent.nseSpecial = Content.CreateNSE("Play_RailgunnerArisu_ExSkill");
+            RailgunnerArisuVoiceoverComponent.nseBlock = Content.CreateNSE("Play_RailgunnerArisu_Blocked");
         }
 
 
@@ -164,6 +174,56 @@ namespace RailgunnerArisuVoiceover
                 {
                     BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
                     if (!existingVoiceoverComponent) self.gameObject.AddComponent<RailgunnerArisuVoiceoverComponent>();
+                }
+            }
+        }
+
+        public void RefreshNSE()
+        {
+            foreach (NSEInfo nse in nseList)
+            {
+                nse.ValidateParams();
+            }
+        }
+
+        public static List<NSEInfo> nseList = new List<NSEInfo>();
+        public class NSEInfo
+        {
+            public NetworkSoundEventDef nse;
+            public uint akId = 0u;
+            public string eventName = string.Empty;
+
+            public NSEInfo(NetworkSoundEventDef source)
+            {
+                this.nse = source;
+                this.akId = source.akId;
+                this.eventName = source.eventName;
+            }
+
+            private void DisableSound()
+            {
+                nse.akId = 0u;
+                nse.eventName = string.Empty;
+            }
+
+            private void EnableSound()
+            {
+                nse.akId = this.akId;
+                nse.eventName = this.eventName;
+            }
+
+            public void ValidateParams()
+            {
+                if (this.akId == 0u) this.akId = nse.akId;
+                if (this.eventName == string.Empty) this.eventName = nse.eventName;
+
+                if (!enableVoicelines.Value)
+                {
+                    DisableSound();
+                }
+                else
+                {
+                    EnableSound();
                 }
             }
         }
