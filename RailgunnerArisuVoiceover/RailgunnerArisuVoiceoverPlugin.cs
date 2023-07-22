@@ -16,7 +16,7 @@ namespace RailgunnerArisuVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.TendouArisTheRailgunner")]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.1")]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.2")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -104,7 +104,7 @@ namespace RailgunnerArisuVoiceover
                         BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
                         int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);
                         SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
-                        if (RailgunnerArisuVoiceoverComponent.requiredSkinDefs.Contains(safe))
+                        if (RailgunnerArisuVoiceoverComponent.requiredSkinDefs.Contains(safe) && enableVoicelines.Value)
                         {
                             bool played = false;
                             if (!playedSeasonalVoiceline)
