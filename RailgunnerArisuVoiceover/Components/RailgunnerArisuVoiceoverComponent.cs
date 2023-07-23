@@ -34,8 +34,7 @@ namespace RailgunnerArisuVoiceover.Components
         protected override void Start()
         {
             base.Start();
-            CharacterBody cb = base.GetComponent<CharacterBody>();
-            if (cb && cb.inventory && cb.inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
@@ -97,7 +96,7 @@ namespace RailgunnerArisuVoiceover.Components
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseSpecial, 4f, false);
-            if (played) specialCooldown = 10f;
+            if (played) specialCooldown = 5f;
         }
 
         public override void PlayTeleporterFinish()
