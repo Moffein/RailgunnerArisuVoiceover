@@ -31,6 +31,13 @@ namespace RailgunnerArisuVoiceover.Components
             base.Awake();
         }
 
+        protected override void Start()
+        {
+            base.Start();
+            CharacterBody cb = base.GetComponent<CharacterBody>();
+            if (cb && cb.inventory && cb.inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+        }
+
         protected override void FixedUpdate()
         {
             base.FixedUpdate();
@@ -46,7 +53,7 @@ namespace RailgunnerArisuVoiceover.Components
         {
             if (!NetworkServer.active || blockedCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseBlock, 1.2f, false);
-            if (played) blockedCooldown = 10f;
+            if (played) blockedCooldown = 30f;
         }
 
         public override void PlayDeath()
@@ -138,7 +145,7 @@ namespace RailgunnerArisuVoiceover.Components
         public void PlayAcquireScepter()
         {
             if (acquiredScepter) return;
-            TryPlaySound("Play_RailgunnerArisu_AcquireScepter", 5.6f, false);
+            TryPlaySound("Play_RailgunnerArisu_AcquireScepter", 5.6f, true);
             acquiredScepter = true;
         }
 
