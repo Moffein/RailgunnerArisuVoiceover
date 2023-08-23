@@ -141,9 +141,16 @@ namespace RailgunnerArisuVoiceover.Components
         {
             bool playedSound = false;
 
-            if (RailgunnerArisuVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay) && !preventVoicelines)
+            if (RailgunnerArisuVoiceoverPlugin.enableVoicelines.Value && (CanPlayVoiceline() || forcePlay))
             {
-                EntitySoundManager.EmitSoundServer(networkSoundIndex, base.gameObject);
+                if (NetworkServer.active)
+                {
+                    EntitySoundManager.EmitSoundServer(networkSoundIndex, base.gameObject);
+                }
+                else
+                {
+                    EffectManager.SimpleSoundEffect(networkSoundIndex, base.gameObject.transform.position, true);
+                }
                 playedSound = true;
 
                 SetVoiceCooldown(cooldown);

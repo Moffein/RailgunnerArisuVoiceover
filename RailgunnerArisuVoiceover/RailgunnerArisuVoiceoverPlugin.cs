@@ -16,7 +16,7 @@ namespace RailgunnerArisuVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Alicket.TendouArisTheRailgunner")]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.3")]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.0.4")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
