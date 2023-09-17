@@ -44,13 +44,5 @@ namespace RailgunnerArisuVoiceover.Modules
             args.ReportProgress(1f);
             yield break;
         }
-
-        public static NetworkSoundEventDef CreateNSE(string eventName)
-        {
-            NetworkSoundEventDef nse = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            nse.eventName = eventName;
-            networkSoundEventDefs.Add(nse);
-            return nse;
-        }
     }
 }

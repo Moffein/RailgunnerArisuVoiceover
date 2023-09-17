@@ -1,4 +1,5 @@
-﻿using RoR2;
+﻿using BaseVoiceoverLib;
+using RoR2;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,10 +10,7 @@ namespace RailgunnerArisuVoiceover.Components
 {
     public class RailgunnerArisuVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static ItemIndex ScepterIndex;
-        public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-        public static NetworkSoundEventDef nseSpecial;
-        public static NetworkSoundEventDef nseBlock;
+        public static NetworkSoundEventDef nseSpecial, nseBlock, nsePanpakapan;
 
         private float blockedCooldown = 0f;
         private float specialCooldown = 0f;
@@ -21,20 +19,11 @@ namespace RailgunnerArisuVoiceover.Components
         private float elixirCooldown = 0f;
         private float lowHealthCooldown = 0f;
         private bool acquiredScepter = false;
-        protected override void Awake()
-        {
-            spawnVoicelineDelay = 3f;
-            if (Run.instance && Run.instance.stageClearCount == 0)
-            {
-                spawnVoicelineDelay = 6.5f;
-            }
-            base.Awake();
-        }
 
         protected override void Start()
         {
             base.Start();
-            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(scepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
@@ -68,8 +57,6 @@ namespace RailgunnerArisuVoiceover.Components
             }
         }
 
-        public override void PlayJump() { }
-
         public override void PlayLevelUp()
         {
             if (levelCooldown > 0f) return;
@@ -83,16 +70,12 @@ namespace RailgunnerArisuVoiceover.Components
             if (TryPlaySound("Play_RailgunnerArisu_LowHealth", 1.9f, false)) lowHealthCooldown = 60f;
         }
 
-        public override void PlayPrimaryAuthority() { }
-
-        public override void PlaySecondaryAuthority() { }
-
         public override void PlaySpawn()
         {
             TryPlaySound("Play_RailgunnerArisu_Spawn", 5f, true);
         }
 
-        public override void PlaySpecialAuthority()
+        public override void PlaySpecialAuthority(GenericSkill skill)
         {
             if (specialCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseSpecial, 4f, false);
@@ -109,8 +92,6 @@ namespace RailgunnerArisuVoiceover.Components
             TryPlaySound("Play_RailgunnerArisu_TeleporterStart", 1.4f, false);
         }
 
-        public override void PlayUtilityAuthority() { }
-
         public override void PlayVictory()
         {
             TryPlaySound("Play_RailgunnerArisu_Victory", 3f, true);
@@ -119,7 +100,7 @@ namespace RailgunnerArisuVoiceover.Components
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
         {
             base.Inventory_onItemAddedClient(itemIndex);
-            if (RailgunnerArisuVoiceoverComponent.ScepterIndex != ItemIndex.None && itemIndex == RailgunnerArisuVoiceoverComponent.ScepterIndex)
+            if (scepterIndex != ItemIndex.None && itemIndex == scepterIndex)
             {
                 PlayAcquireScepter();
             }
@@ -173,6 +154,11 @@ namespace RailgunnerArisuVoiceover.Components
         {
             if (elixirCooldown > 0) return;
             if (TryPlaySound("Play_RailgunnerArisu_Heal", 1.5f, false)) coffeeCooldown = 60f;
+        }
+
+        public override void PlayShrineOfChanceSuccessServer()
+        {
+            TryPlayNetworkSound(nsePanpakapan, 1.5f, false);
         }
     }
 }
