@@ -20,6 +20,7 @@ namespace RailgunnerArisuVoiceover
     [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.0")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
+        public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonPanpakapan, buttonHikari, buttonMahou, buttonNakama, buttonHurt, buttonLevel, buttonKougeki, buttonIntro, buttonPotion, buttonIkimasu, buttonReset, buttonCafe5, buttonLight;
         public static ConfigEntry<bool> enableVoicelines;
         public static bool playedSeasonalVoiceline = false;
         public static AssetBundle assetBundle;
@@ -39,6 +40,23 @@ namespace RailgunnerArisuVoiceover
 
             enableVoicelines = base.Config.Bind<bool>(new ConfigDefinition("Settings", "Enable Voicelines"), true, new ConfigDescription("Enable voicelines when using the Aris Railgunner Skin."));
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
+
+
+            buttonTitle = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Blue Archive"), KeyboardShortcut.Empty);
+            buttonIntro = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Introduction"), KeyboardShortcut.Empty);
+            buttonPanpakapan = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Panpakapan"), KeyboardShortcut.Empty);
+            buttonHikari = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hikari yo!"), KeyboardShortcut.Empty);
+            buttonMahou = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Courage"), KeyboardShortcut.Empty);
+            buttonNakama = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Friendship"), KeyboardShortcut.Empty);
+            buttonCafe5 = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Pat"), KeyboardShortcut.Empty);
+            buttonLight = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Light"), KeyboardShortcut.Empty);
+            buttonReset = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "System Reset"), KeyboardShortcut.Empty);
+            buttonPotion = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "HP Potion"), KeyboardShortcut.Empty);
+            buttonLevel = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Level Up"), KeyboardShortcut.Empty);
+            buttonKougeki = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Kougeki"), KeyboardShortcut.Empty);
+            buttonIkimasu = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Ikimasu"), KeyboardShortcut.Empty);
+            buttonHurt = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Hurt"), KeyboardShortcut.Empty);
+
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions"))
             {
                 RiskOfOptionsCompat();
@@ -60,6 +78,21 @@ namespace RailgunnerArisuVoiceover
         {
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.CheckBoxOption(enableVoicelines));
             RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("ClanChat_Emoji_14_Jp"));
+
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonTitle));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIntro));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonPanpakapan));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHikari));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonMahou));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonNakama));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonCafe5));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonLight));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonReset));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonPotion));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonLevel));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonKougeki));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIkimasu));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonHurt));
         }
 
         private void OnLoad()
@@ -137,6 +170,18 @@ namespace RailgunnerArisuVoiceover
             RailgunnerArisuVoiceoverComponent.nseSpecial = RegisterNSE("Play_RailgunnerArisu_ExSkill");
             RailgunnerArisuVoiceoverComponent.nseBlock = RegisterNSE("Play_RailgunnerArisu_Blocked");
             RailgunnerArisuVoiceoverComponent.nsePanpakapan = RegisterNSE("Play_RailgunnerArisu_Panpakapan");
+            RailgunnerArisuVoiceoverComponent.nseHikari = RegisterNSE("Play_RailgunnerArisu_Hikari");
+            RailgunnerArisuVoiceoverComponent.nseMahou = RegisterNSE("Play_RailgunnerArisu_Mahou");
+            RailgunnerArisuVoiceoverComponent.nseNakama = RegisterNSE("Play_RailgunnerArisu_Nakama");
+            RailgunnerArisuVoiceoverComponent.nseHurt = RegisterNSE("Play_RailgunnerArisu_Hurt");
+            RailgunnerArisuVoiceoverComponent.nseLevel = RegisterNSE("Play_RailgunnerArisu_Level");
+            RailgunnerArisuVoiceoverComponent.nseKougeki = RegisterNSE("Play_RailgunnerArisu_Kougeki");
+            RailgunnerArisuVoiceoverComponent.nseIntro = RegisterNSE("Play_RailgunnerArisu_Intro");
+            RailgunnerArisuVoiceoverComponent.nsePotion = RegisterNSE("Play_RailgunnerArisu_Heal");
+            RailgunnerArisuVoiceoverComponent.nseIkimasu = RegisterNSE("Play_RailgunnerArisu_Ikimasu");
+            RailgunnerArisuVoiceoverComponent.nseReset = RegisterNSE("Play_RailgunnerArisu_Reset");
+            RailgunnerArisuVoiceoverComponent.nseCafe5 = RegisterNSE("Play_RailgunnerArisu_Cafe5");
+            RailgunnerArisuVoiceoverComponent.nseLight = RegisterNSE("Play_RailgunnerArisu_Light");
         }
 
         private NetworkSoundEventDef RegisterNSE(string eventName)

@@ -2073,6 +2073,28 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<Sound Name="Arisu_Hikari" ID="{B89A1EBB-B60F-4EF6-B60B-64A4304607C0}" ShortID="845243234">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1A0903CA-4FED-4C07-BB96-02B6BA2B28D6}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{154BF966-2DA1-4059-865B-54B6A0EB1FBC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Arisu_Hikari" ID="{2E46D6F4-A4F5-4AB6-88D8-F897425856D0}">
+													<Language>SFX</Language>
+													<AudioFile>Arisu_Hikari.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952925484"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Arisu_Hikari" ID="{2E46D6F4-A4F5-4AB6-88D8-F897425856D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

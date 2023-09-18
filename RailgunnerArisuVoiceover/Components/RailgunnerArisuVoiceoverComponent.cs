@@ -10,7 +10,7 @@ namespace RailgunnerArisuVoiceover.Components
 {
     public class RailgunnerArisuVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static NetworkSoundEventDef nseSpecial, nseBlock, nsePanpakapan;
+        public static NetworkSoundEventDef nseSpecial, nseBlock, nsePanpakapan, nseTitle, nseHikari, nseMahou, nseNakama, nseHurt, nseLevel, nseKougeki, nseIntro, nsePotion, nseIkimasu, nseReset, nseCafe5, nseLight;
 
         private float blockedCooldown = 0f;
         private float specialCooldown = 0f;
@@ -133,7 +133,7 @@ namespace RailgunnerArisuVoiceover.Components
         {
             if (Util.CheckRoll(20f))
             {
-                TryPlaySound("Play_RailgunnerArisu_Panpakapan", 1.5f, false);
+                TryPlaySound("Play_RailgunnerArisu_Panpakapan", 1.25f, false);
                 return;
             }
             if (Util.CheckRoll(50f))
@@ -158,7 +158,81 @@ namespace RailgunnerArisuVoiceover.Components
 
         public override void PlayShrineOfChanceSuccessServer()
         {
-            TryPlayNetworkSound(nsePanpakapan, 1.5f, false);
+            TryPlayNetworkSound(nsePanpakapan, 1.25f, false);
+        }
+
+        protected override void CheckInputs()
+        {
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonTitle))
+            {
+                TryPlayNetworkSound(nseTitle, 1f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonPanpakapan))
+            {
+                TryPlayNetworkSound(nsePanpakapan, 1.25f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonHikari))
+            {
+                TryPlayNetworkSound(nseHikari, 1.25f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonMahou))
+            {
+                TryPlayNetworkSound(nseMahou, 2.8f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonNakama))
+            {
+                TryPlayNetworkSound(nseNakama, 2.4f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonHurt))
+            {
+                TryPlayNetworkSound(nseHurt, 0.1f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonLevel))
+            {
+                TryPlayNetworkSound(nseLevel, 3.75f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonKougeki))
+            {
+                TryPlayNetworkSound(nseKougeki, 1.2f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonIntro))
+            {
+                TryPlayNetworkSound(nseIntro, 3.8f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonPotion))
+            {
+                TryPlayNetworkSound(nsePotion, 1.25f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonIkimasu))
+            {
+                TryPlayNetworkSound(nseIkimasu, 0.55f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonReset))
+            {
+                TryPlayNetworkSound(nseReset, 1.3f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonCafe5))
+            {
+                TryPlayNetworkSound(nseCafe5, 7f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(RailgunnerArisuVoiceoverPlugin.buttonLight))
+            {
+                TryPlayNetworkSound(nseLight, 2.5f, false);
+                return;
+            }
         }
     }
 }
