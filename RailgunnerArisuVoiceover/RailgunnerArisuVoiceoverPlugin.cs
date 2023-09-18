@@ -167,13 +167,14 @@ namespace RailgunnerArisuVoiceover
 
         private void InitNSE()
         {
+            RailgunnerArisuVoiceoverComponent.nseTitle = RegisterNSE("Play_RailgunnerArisu_TitleDrop");
             RailgunnerArisuVoiceoverComponent.nseSpecial = RegisterNSE("Play_RailgunnerArisu_ExSkill");
             RailgunnerArisuVoiceoverComponent.nseBlock = RegisterNSE("Play_RailgunnerArisu_Blocked");
             RailgunnerArisuVoiceoverComponent.nsePanpakapan = RegisterNSE("Play_RailgunnerArisu_Panpakapan");
             RailgunnerArisuVoiceoverComponent.nseHikari = RegisterNSE("Play_RailgunnerArisu_Hikari");
             RailgunnerArisuVoiceoverComponent.nseMahou = RegisterNSE("Play_RailgunnerArisu_Mahou");
             RailgunnerArisuVoiceoverComponent.nseNakama = RegisterNSE("Play_RailgunnerArisu_Nakama");
-            RailgunnerArisuVoiceoverComponent.nseHurt = RegisterNSE("Play_RailgunnerArisu_Hurt");
+            RailgunnerArisuVoiceoverComponent.nseHurt = RegisterNSE("Play_RailgunnerArisu_TakeDamage");
             RailgunnerArisuVoiceoverComponent.nseLevel = RegisterNSE("Play_RailgunnerArisu_Level");
             RailgunnerArisuVoiceoverComponent.nseKougeki = RegisterNSE("Play_RailgunnerArisu_Kougeki");
             RailgunnerArisuVoiceoverComponent.nseIntro = RegisterNSE("Play_RailgunnerArisu_Intro");
