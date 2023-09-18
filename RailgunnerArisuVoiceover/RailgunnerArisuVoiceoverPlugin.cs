@@ -16,8 +16,9 @@ using BaseVoiceoverLib;
 namespace RailgunnerArisuVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInDependency("com.Alicket.TendouArisTheRailgunner")]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.0")]
+    [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.Alicket.TendouArisTheRailgunner", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.1")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonPanpakapan, buttonHikari, buttonMahou, buttonNakama, buttonHurt, buttonLevel, buttonKougeki, buttonIntro, buttonPotion, buttonIkimasu, buttonReset, buttonCafe5, buttonLight;
