@@ -234,5 +234,10 @@ namespace RailgunnerArisuVoiceover.Components
                 return;
             }
         }
+
+        public override bool ComponentEnableVoicelines()
+        {
+            return RailgunnerArisuVoiceover.RailgunnerArisuVoiceoverPlugin.enableVoicelines.Value;
+        }
     }
 }
