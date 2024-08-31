@@ -15,10 +15,11 @@ using BaseVoiceoverLib;
 
 namespace RailgunnerArisuVoiceover
 {
+    [BepInDependency(R2API.SoundAPI.PluginGUID)]
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Alicket.TendouArisTheRailgunner", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.2")]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.3")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonPanpakapan, buttonHikari, buttonMahou, buttonNakama, buttonHurt, buttonLevel, buttonKougeki, buttonIntro, buttonPotion, buttonIkimasu, buttonReset, buttonCafe5, buttonLight;
@@ -36,6 +37,7 @@ namespace RailgunnerArisuVoiceover
             {
                 assetBundle = AssetBundle.LoadFromStream(stream);
             }
+            SoundBanks.Init();
 
             InitNSE();
 
@@ -67,11 +69,6 @@ namespace RailgunnerArisuVoiceover
         private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
         {
             RefreshNSE();
-        }
-
-        private void Start()
-        {
-            SoundBanks.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{D1C73738-C4BA-4E17-9A7A-9F93C1762A38}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_RailgunnerArisu_Defeat" ID="{2D0405F9-98ED-4AF6-B12B-1090888C0BBE}">
+					<ChildrenList>
+						<Action Name="" ID="{1E23792C-376B-4D4E-9354-5587BD757571}" ShortID="464932870">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Defeat" ID="{2D13575E-928D-438F-B71D-763D68E3A1CF}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_ExSkill" ID="{67ECF72C-300A-4095-B049-AA77FCBE378E}">
+					<ChildrenList>
+						<Action Name="" ID="{A0D5ABBA-67F9-4E87-AA8F-033280F7AF26}" ShortID="230771765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ExSkill" ID="{DCE9172B-FD71-4E63-B829-7B7806A635BB}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Charge" ID="{FD7952F2-0397-4202-9D1D-C9D7195A7163}">
+					<ChildrenList>
+						<Action Name="" ID="{2DAFD64C-4BF5-4204-B5E4-222EBDC2ED13}" ShortID="280876714">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_CommonSkill" ID="{C1D7FE60-C751-4208-B100-75396E18ACF1}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Victory" ID="{491A0656-3FA6-4E89-8E20-413DC148B44C}">
+					<ChildrenList>
+						<Action Name="" ID="{BC817AFC-79A9-4A37-A706-936C9E28526C}" ShortID="412667332">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{2C950A7A-A4BE-4E54-A170-908D9D2A6708}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_TitleDrop" ID="{F51A1E56-5084-49F5-A8A5-8EE881E76AF1}">
+					<ChildrenList>
+						<Action Name="" ID="{C2F0EA5B-46CE-4E9A-A284-3E11AB5726CC}" ShortID="610142614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Title" ID="{DDD7F9C2-7CDF-4B8F-8C03-4DD52805F321}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_TakeDamage" ID="{3F2889EC-80E1-4509-B236-86BE89BEE6B8}">
+					<ChildrenList>
+						<Action Name="" ID="{4126D8EC-B28C-454E-9208-7E22875CCBE9}" ShortID="590131210">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakeDamage" ID="{CBBF87EF-7643-4D2B-9FDA-CD42A119FC81}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Lobby" ID="{4315E359-20F7-40AC-9734-D5F457CCE514}">
+					<ChildrenList>
+						<Action Name="" ID="{611884A9-1E11-4C16-910A-7B276A201DCA}" ShortID="412884697">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lobby" ID="{783DABF7-5B91-42CC-A0FC-0E56AC6BB619}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Lobby_bday" ID="{F1E2A9EA-5B74-4A62-83A3-11E1CE34FB12}">
+					<ChildrenList>
+						<Action Name="" ID="{C8B751A6-B7F1-486F-8924-20D94CF82BF3}" ShortID="139499073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Season_Birthday" ID="{38ED00BC-7670-46FB-9E98-5C09ED4F299A}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Lobby_Halloween" ID="{2E3EC5F1-2A13-4199-8132-A1D6D1F3A776}">
+					<ChildrenList>
+						<Action Name="" ID="{229536D0-5440-4EEF-80EC-F196DA3D96EC}" ShortID="942976090">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Season_Halloween" ID="{A4C8BE03-EE6C-4237-B2F6-F9A717A4FE19}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Lobby_xmas" ID="{DC3DFB0E-6790-4BC2-85FA-828496F2AABE}">
+					<ChildrenList>
+						<Action Name="" ID="{043129A8-F159-454D-8630-1C710055255A}" ShortID="847750473">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Season_Xmas" ID="{C39CD792-CFF9-4547-8242-7583005E16C5}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Lobby_Newyear" ID="{97BD0B5E-9F18-41F8-BA32-DA13FD57FA87}">
+					<ChildrenList>
+						<Action Name="" ID="{6936FF99-514A-4ABD-8143-BCF4C54D78A3}" ShortID="1013074958">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Season_Newyear" ID="{9A263186-C7EF-468B-B9AF-09B5AD191A33}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_AcquireScepter" ID="{34FC4B20-93EE-42DE-91F4-5F91D460A056}">
+					<ChildrenList>
+						<Action Name="" ID="{2EEAB5F6-E129-4CB0-B711-03505FD95439}" ShortID="345712841">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_ExWeapon_Get" ID="{7B5860DC-91E0-4B19-9D2F-5B04D6845DF2}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Relationship_Long" ID="{6B4BEE17-848E-4ED5-BB75-4E3617BBD34A}">
+					<ChildrenList>
+						<Action Name="" ID="{7667ED60-D949-4DF1-84B4-92E86969C09E}" ShortID="771697449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship_Long" ID="{E652EFDC-EF1E-45C0-8C9E-8CFD88B746D3}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_LevelUp" ID="{E9148E4E-C594-441B-83A2-6FBC180AF9F8}">
+					<ChildrenList>
+						<Action Name="" ID="{5B1751B1-CBC8-458E-9217-2251C353F09D}" ShortID="635768542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelUp" ID="{C842EF0F-B79C-4C42-A7F6-61F6DB9F2356}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Spawn" ID="{ACA3CD8D-D5D2-4D48-978F-C982F2413C72}">
+					<ChildrenList>
+						<Action Name="" ID="{2906A587-7337-4CBD-B69B-08E3A9E808EB}" ShortID="165345907">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spawn" ID="{6AD30CAC-A4A6-47C0-93BB-67EE6F54B219}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Blocked" ID="{AFBC78A4-1B36-4CDA-B760-3334CC5DF5F2}">
+					<ChildrenList>
+						<Action Name="" ID="{005E155B-6CE9-4EFC-AD0B-3C3C238131D3}" ShortID="816417954">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Defense_1" ID="{6F725C94-D6AA-4B4D-9A20-D578FCE80835}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Heal" ID="{F99D2FC5-FB28-4FE2-AFCD-216F4C6DC5AB}">
+					<ChildrenList>
+						<Action Name="" ID="{B1685DAF-21CC-436F-9758-EEBB63625B13}" ShortID="670300633">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Recovery_1" ID="{73047611-03D8-4979-BFC4-AEDA5DDB853B}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Cafe_2" ID="{63FB4B60-E04A-47F7-AEFB-3ED6A23D26B4}">
+					<ChildrenList>
+						<Action Name="" ID="{D72D51A7-F5AB-4F5A-991F-AD5F16BAE1DD}" ShortID="697642087">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Cafe_Act_2" ID="{1232CA49-5B50-488D-9F93-E89081AE5085}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Relationship_Short" ID="{21D325A3-D1FE-48FB-9C48-F6EB136FA190}">
+					<ChildrenList>
+						<Action Name="" ID="{05936E85-B9D1-43CF-B3AA-C834B82E2CE8}" ShortID="509925801">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship_Short" ID="{3B7DF43A-621F-4E6D-95A9-066C25121362}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_TeleporterStart" ID="{974BAB3C-35AB-4F95-82F9-BA4CFBB9EE92}">
+					<ChildrenList>
+						<Action Name="" ID="{2BF3D245-8D6E-4ED1-9616-5A031633BA92}" ShortID="750551651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TeleporterStart" ID="{68FE673E-4798-47E7-A347-DD032481EB0C}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Panpakapan" ID="{2772F367-7A39-4B94-AF6E-B6CBF8FB1B7E}">
+					<ChildrenList>
+						<Action Name="" ID="{1BD8193B-332B-43D2-A373-4D2BC8911987}" ShortID="335797723">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_(Maid)_Panpakapan" ID="{B3B2AE84-52C4-4162-82BC-4D1148EB0A62}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_LowHealth" ID="{18FF0491-DA92-45F3-8D27-8616454C360C}">
+					<ChildrenList>
+						<Action Name="" ID="{5B585265-BF63-4F96-A5A8-26C2C7809BAF}" ShortID="565889854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LowHealth" ID="{34D6D951-E06A-42C5-A4E5-05AEDAE76DFA}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Intro" ID="{C64024D7-C5FB-4EF0-A0F2-0C8515319ECD}">
+					<ChildrenList>
+						<Action Name="" ID="{3E96ADD8-0D1D-4978-A714-36A8AC3C85DD}" ShortID="400403816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Gachaget" ID="{F7F84A49-0000-4787-9246-203EFED0713B}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Hikari" ID="{58A0C9F1-89AE-436F-AD99-E6B4C0009E28}">
+					<ChildrenList>
+						<Action Name="" ID="{62550477-1906-4D90-B609-3407260C4305}" ShortID="878768689">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Hikari" ID="{B89A1EBB-B60F-4EF6-B60B-64A4304607C0}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Mahou" ID="{C25664C4-4205-4BAC-B51E-23B6EA136A3C}">
+					<ChildrenList>
+						<Action Name="" ID="{88FD2C5F-A4A3-467C-8535-ECAD79A9C8B9}" ShortID="882028616">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Victory_2" ID="{65835F81-656D-4128-9024-5792A9787A32}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Nakama" ID="{31D06038-2E69-45AE-BE6A-DAD7DABB4ABC}">
+					<ChildrenList>
+						<Action Name="" ID="{70C594B1-EF1F-40F3-9C99-581376FD874D}" ShortID="346601127">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Victory_1" ID="{CF29AE3A-2658-423E-A82A-74BD45C750BB}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Level" ID="{A6FFD76A-687B-480C-A8CC-2FBBE4070504}">
+					<ChildrenList>
+						<Action Name="" ID="{C293AF3E-AC7A-4EF1-90A5-40CBC47858E6}" ShortID="649718924">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Growup_1" ID="{1CF73B51-D54D-4C2F-BF30-419E97D58546}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Kougeki" ID="{D3ADE9B7-5B18-4CD4-B7BD-253D5FEEC619}">
+					<ChildrenList>
+						<Action Name="" ID="{F52F62CE-D1E4-47E2-B29D-E720E0666EB4}" ShortID="393879181">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Shout_3" ID="{98D6A68E-CFF4-4E48-9431-31E8A871A750}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Ikimasu" ID="{8E9784B6-78C1-4291-B6C2-2695D7295988}">
+					<ChildrenList>
+						<Action Name="" ID="{227E21BB-F5E6-4A8F-906C-A2CE3C8CCCD5}" ShortID="43655762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Shout_2" ID="{FEC61FCD-E60B-4C65-A77A-331C8B028A2C}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Reset" ID="{CCD96CB6-17A0-437D-9000-C3220BD517C2}">
+					<ChildrenList>
+						<Action Name="" ID="{93700409-E86D-4DD3-BCD4-2ADEE8B28D31}" ShortID="104436513">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_Damage_3" ID="{725F5A9C-7CC3-4F96-A062-21FDD00607C8}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Cafe5" ID="{B8091A12-DB2F-459B-95E6-9CEAD498DDEF}">
+					<ChildrenList>
+						<Action Name="" ID="{51A2F600-3AA7-4209-AAB3-0C02F9F75EE6}" ShortID="542677271">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Cafe_Act_5" ID="{5C858FB4-0EE9-4550-9A2F-C307C99C9918}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RailgunnerArisu_Light" ID="{2AC79978-B254-4639-A7C0-5D186AAB8B87}">
+					<ChildrenList>
+						<Action Name="" ID="{2C6C1AAA-044D-4C30-B75C-3C2227CCA670}" ShortID="435976622">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arisu_Battle_In_2" ID="{395E54CB-07A6-4FBC-B289-84AB2A11D4FE}" WorkUnitID="{49A068A3-F08E-40E6-9330-461DBC522707}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

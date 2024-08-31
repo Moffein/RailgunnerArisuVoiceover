@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="RailgunnerArisuVoiceoverWWISE" GUID="{F90FA649-90E3-4652-B392-B5AB07CE547F}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{70F379F9-425C-4378-A291-FB83E8AE1B25}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{8FA15BA8-3299-4F25-B750-7F0D01E2811C}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{F98976BF-C626-87FC-E674-86F222E9D836}</FileHash>
+</ProjectInfo>
