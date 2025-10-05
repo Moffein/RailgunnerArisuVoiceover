@@ -19,7 +19,7 @@ namespace RailgunnerArisuVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Alicket.TendouArisTheRailgunner", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.3")]
+    [BepInPlugin("com.Schale.RailgunnerArisuVoiceover", "RailgunnerArisVoiceover", "1.1.5")]
     public class RailgunnerArisuVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTitle, buttonPanpakapan, buttonHikari, buttonMahou, buttonNakama, buttonHurt, buttonLevel, buttonKougeki, buttonIntro, buttonPotion, buttonIkimasu, buttonReset, buttonCafe5, buttonLight;
@@ -124,7 +124,7 @@ namespace RailgunnerArisuVoiceover
             bool played = false;
             if (!playedSeasonalVoiceline)
             {
-                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
+                if ((System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1) || (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 31))
                 {
                     Util.PlaySound("Play_RailgunnerArisu_Lobby_Newyear", mannequinObject);
                     played = true;
@@ -139,7 +139,7 @@ namespace RailgunnerArisuVoiceover
                     Util.PlaySound("Play_RailgunnerArisu_Lobby_Halloween", mannequinObject);
                     played = true;
                 }
-                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                else if (System.DateTime.Today.Month == 12 && (System.DateTime.Today.Day == 24 || System.DateTime.Today.Day == 25))
                 {
                     Util.PlaySound("Play_RailgunnerArisu_Lobby_xmas", mannequinObject);
                     played = true;
